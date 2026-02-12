@@ -23,7 +23,7 @@ type Racket struct {
 
 var series []string
 var brand = "Starvie"
-var mainURL = "https://starvie.com/en"
+var mainURL = "https://starvie.com"
 
 func importSeries(url string) {
 	c := colly.NewCollector()
@@ -41,6 +41,28 @@ func importSeries(url string) {
 	if err := c.Visit(url); err != nil {
 		fmt.Println("Visit error: ", err)
 	}
+}
+
+func scrapSpecificRacketPage(url string) (weight string, shape string, material string) {
+
+	c := colly.NewCollector()
+	c.OnHTML("table.product-features-table tr", func(e *colly.HTMLElement) {
+		if e.ChildText("td:nth-child(1)") == "Weight" {
+			weight = e.ChildText("td:nth-child(2)")
+		}
+		if e.ChildText("td:nth-child(1)") == "Shape" {
+			shape = e.ChildText("td:nth-child(2)")
+		}
+		if e.ChildText("td:nth-child(1)") == "Surface" {
+			material = e.ChildText("td:nth-child(2)")
+		}
+	})
+
+	if err := c.Visit(url); err != nil {
+		fmt.Println("Visit error: ", err)
+	}
+
+	return weight, shape, material
 }
 
 func scrapMainPageOfSeries(url string) {
@@ -62,6 +84,7 @@ func scrapMainPageOfSeries(url string) {
 			RacketPage: mainURL + e.ChildAttr("a", "href"),
 		}
 		item.Series = racketSeries
+
 		item.ImageUrl = strings.SplitN(item.ImageUrl, "?", 2)[0]
 		item.ImageUrl = strings.TrimPrefix(item.ImageUrl, "//")
 		rackets = append(rackets, item)
@@ -91,5 +114,7 @@ func main() {
 			scrapMainPageOfSeries("https://starvie.com/en/collections/" + series[i])
 		}
 	*/
-	scrapMainPageOfSeries("https://starvie.com/en/collections/super-pro-line")
+	//scrapMainPageOfSeries("https://starvie.com/en/collections/super-pro-line")
+	fmt.Println(scrapSpecificRacketPage("https://starvie.com/en/products/black-titan"))
+	fmt.Println("Done")
 }

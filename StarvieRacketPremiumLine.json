@@ -1,0 +1,24 @@
+[
+  {
+    "brand": "Starvie",
+    "model": "Drax+",
+    "price": "€270,00",
+    "imageUrl": "starvie.com/cdn/shop/files/Drax_pala_de_padel_STARVIE.MAIN.png",
+    "racketPage": "https://starvie.com/en/products/drax",
+    "weight": "360 (+/- 8 g)",
+    "shape": "Teardrop",
+    "material": "12K CARBON HYPER",
+    "series": "PremiumLine"
+  },
+  {
+    "brand": "Starvie",
+    "model": "Kenta+",
+    "price": "€265,00",
+    "imageUrl": "starvie.com/cdn/shop/files/Kenta_paladepadelSTARVIE.MAIN_3afd2c8f-c5b3-4c96-ae3b-00151eceda84.png",
+    "racketPage": "https://starvie.com/en/products/kenta",
+    "weight": "358 (+/- 8 g)",
+    "shape": "Round",
+    "material": "12K CARBON HYPER",
+    "series": "PremiumLine"
+  }
+]

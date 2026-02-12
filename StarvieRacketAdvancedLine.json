@@ -1,0 +1,35 @@
+[
+  {
+    "brand": "Starvie",
+    "model": "Polaris",
+    "price": "€175,00",
+    "imageUrl": "starvie.com/cdn/shop/files/Polaris_pala_padel_STARVIE.MAIN.png",
+    "racketPage": "https://starvie.com/en/products/polaris",
+    "weight": "358 (+/- 8 g)",
+    "shape": "Teardrop",
+    "material": "X GLASS TECH",
+    "series": "AdvancedLine"
+  },
+  {
+    "brand": "Starvie",
+    "model": "Arkos",
+    "price": "€150,00",
+    "imageUrl": "starvie.com/cdn/shop/files/Arkos_pala_de_padel_STARVIE.MAIN.png",
+    "racketPage": "https://starvie.com/en/products/arkos",
+    "weight": "358 (+/- 8 g)",
+    "shape": "Round",
+    "material": "X GLASS TECH",
+    "series": "AdvancedLine"
+  },
+  {
+    "brand": "Starvie",
+    "model": "Nyra",
+    "price": "€150,00",
+    "imageUrl": "starvie.com/cdn/shop/files/Nyra_pala_de_padel_STARVIE.MAIN.png",
+    "racketPage": "https://starvie.com/en/products/nyra",
+    "weight": "340-355 g",
+    "shape": "Round",
+    "material": "X GLASS TECH",
+    "series": "AdvancedLine"
+  }
+]

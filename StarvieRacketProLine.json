@@ -1,0 +1,35 @@
+[
+  {
+    "brand": "Starvie",
+    "model": "Astrum+",
+    "price": "€299,00",
+    "imageUrl": "starvie.com/cdn/shop/files/Astrum_pala_padel_STARVIE.MAIN_8164a11f-9a20-4ed2-98a9-35b21dfc2b25.png",
+    "racketPage": "https://starvie.com/en/products/astrum",
+    "weight": "360 (+/- 8 g)",
+    "shape": "Teardrop",
+    "material": "12K CARBON HYPER",
+    "series": "ProLine"
+  },
+  {
+    "brand": "Starvie",
+    "model": "TritonPower+",
+    "price": "€296,00",
+    "imageUrl": "starvie.com/cdn/shop/files/Triton_Power_pala_padel_STARVIE.MAIN.png",
+    "racketPage": "https://starvie.com/en/products/triton-power",
+    "weight": "358 (+/- 8 g)",
+    "shape": "Diamond",
+    "material": "18K CARBON",
+    "series": "ProLine"
+  },
+  {
+    "brand": "Starvie",
+    "model": "TritonBalance+",
+    "price": "€296,00",
+    "imageUrl": "starvie.com/cdn/shop/files/Triton_Balance_pala_padel_STARVIE.MAIN_e4b55493-fbc3-49e7-b906-81dcc1558ec7.png",
+    "racketPage": "https://starvie.com/en/products/triton-balance",
+    "weight": "358 (+/- 8 g)",
+    "shape": "Diamond",
+    "material": "18K CARBON",
+    "series": "ProLine"
+  }
+]

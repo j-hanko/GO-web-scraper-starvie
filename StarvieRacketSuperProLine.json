@@ -1,0 +1,24 @@
+[
+  {
+    "brand": "Starvie",
+    "model": "BlackTitan",
+    "price": "€320,00",
+    "imageUrl": "starvie.com/cdn/shop/files/Black_Titan_pala_padel_STARVIE.MAIN.png",
+    "racketPage": "https://starvie.com/en/products/black-titan",
+    "weight": "358 (+/- 8 g)",
+    "shape": "Hybrid",
+    "material": "24K Carbon",
+    "series": "SuperProLine"
+  },
+  {
+    "brand": "Starvie",
+    "model": "Raptor+",
+    "price": "€315,00",
+    "imageUrl": "starvie.com/cdn/shop/files/Raptor_pala_de_padel_STARVIE.MAIN_34eea7db-4352-43b6-b0b9-ebecca23a059.png",
+    "racketPage": "https://starvie.com/en/products/raptor",
+    "weight": "358 (+/- 8 g)",
+    "shape": "Teardrop",
+    "material": "3D CARBON",
+    "series": "SuperProLine"
+  }
+]

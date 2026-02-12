@@ -38,7 +38,7 @@ func importSeries(url string) {
 		series = append(series, title)
 	})
 
-	if err := c.Visit(url); err != nil {
+	if err := c.Visit(url + "/en"); err != nil {
 		fmt.Println("Visit error: ", err)
 	}
 }
@@ -87,6 +87,9 @@ func scrapMainPageOfSeries(url string) {
 
 		item.ImageUrl = strings.SplitN(item.ImageUrl, "?", 2)[0]
 		item.ImageUrl = strings.TrimPrefix(item.ImageUrl, "//")
+
+		item.Weight, item.Shape, item.Material = scrapSpecificRacketPage(item.RacketPage)
+
 		rackets = append(rackets, item)
 
 	})
@@ -109,12 +112,8 @@ func scrapMainPageOfSeries(url string) {
 
 func main() {
 	importSeries(mainURL)
-	/*
-		for i := range series {
-			scrapMainPageOfSeries("https://starvie.com/en/collections/" + series[i])
-		}
-	*/
-	//scrapMainPageOfSeries("https://starvie.com/en/collections/super-pro-line")
-	fmt.Println(scrapSpecificRacketPage("https://starvie.com/en/products/black-titan"))
+	for i := range series {
+		scrapMainPageOfSeries("https://starvie.com/en/collections/" + series[i])
+	}
 	fmt.Println("Done")
 }
